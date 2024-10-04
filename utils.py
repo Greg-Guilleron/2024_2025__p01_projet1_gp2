@@ -33,5 +33,18 @@ def ask_for_the_init_number ():
     while not (is_a_valid_number (init_number)) == True:
         init_number = input (ask_again_for_the_init_number_text)
     return init_number
+
+def ask_for_the_init_base ():
+    init_number = input (ask_for_the_init_number_text)
+    while not (is_a_valid_number (init_number)) == True:
+        init_number = input (ask_again_for_the_init_number_text)
+    return init_number
+
+def ask_for_the_target_base ():
+    init_number = input (ask_for_the_init_number_text)
+    while not (is_a_valid_number (init_number)) == True:
+        init_number = input (ask_again_for_the_init_number_text)
+    return init_number
         
 ask_for_the_init_number ()
+ask_for_the_init_base ()
