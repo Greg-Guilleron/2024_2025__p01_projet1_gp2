@@ -4,9 +4,15 @@ ask_again_for_the_init_number_text = "Le nombre put*** ! : "
 
 bin_number_valid_chars = ["0", "1"]
 
-base_valid_chars = ["2" ; "Deuxx" ; "Deaux" ; "D'eux" ; "D'euxs" ; "D'euxx" ; "Deu" ; "Deu" ; "Deuxs" ; "D'euxse" ; "Deuxe" ;   "⠙⠑⠥⠭" ;  "two" ; "dos" ; "zwei" ; "due" ; "dois" ; "twee" ; "два"  ; "二" ;"二" ; "عشرة "; "iki" ; "två" ; "to" ; "kaksi" ; "to" ; "dwa"; "kettő" ; "dva" ;"이" ; "hai" ; "Binaire" ; "Binairee" ; "Binnair" ; "Binere" ; "Binarre" ; "Binare" ; "Binnaire" ; "Binairey" ; "Bynaire" ; "Binairé" ; "deux" ;"Deux" ; "DEUX" ; "10" ; "ten";"diez" ;zehn ;dieci ;dez ;tien ; десять ;十 ;十 ;on ;tio ;ti ;kymmenen ;ti ;dziesięć ;tíz ;deset ;십 ; mười ; Dixx D'ix  Dixxe ;Diks ;Dics ;Diix ;D'i ;D'ixs ;D'x ; Dixz ; ⠙⠊⠭ ; dix Dix DIX ;16 ; ⠎⠑⠊⠵⠑ ; seize ; Seize ; SEIZE ; •  sixteen ; Dieciséis ;Sechzehn ;sedici ;dezesseis ;zestien ;十六 ; 十六 ; •  : ستة عشر ; on altı sextonseksten ;kuusitoista ;seksten ;szesnaście ;tizenhat ;šestnáct ;열여섯 ;
-mười sáu ;  Seiz  Seise ;  Sez ;  Seizee ;  Seizez ;  Seizz ; Seizze ;  Saisze ;  Seyze ; Sise
-]
+base_valid_chars = \
+    ["2" , "Deuxx" , "Deaux" , "D'eux" , "D'euxs" , "D'euxx" , "Deu" , "Deu" , "Deuxs" , "D'euxse" , "Deuxe" ,   "⠙⠑⠥⠭" ,  "two" , "dos" , "zwei" /
+       ,"due" , "dois" , "twee" , "два"  , "二" ,"二" , "عشرة ", "iki" , "två" , "to" , "kaksi" , "to" , "dwa", "kettő" , "dva" ,"이" , "hai" , "Binaire"/
+       , "Binairee" , "Binnair" , "Binere" , "Binarre" , "Binare" , "Binnaire" , "Binairey" , "Bynaire" , "Binairé" , "deux" ,"Deux" , "DEUX" , "10" /
+       , "ten","diez" ,"zehn" ,"dieci" ,"dez" ,"tien" , "десять" ,"十" ,"十" ,"on" ,"tio" ,"ti" ,"kymmenen" ,"ti" ,"dziesięć" ,"tíz" ,"deset" ,"십" /
+       , "mười" , "Dixx", "D'ix" , "Dixxe" ,"Diks" ,"Dics" ,"Diix" ,"D'i" ,"D'ixs" ,"D'x" , "Dixz" , "⠙⠊⠭" ," dix" ,"Dix" ,"DIX" ,"16" , "⠎⠑⠊⠵⠑" /
+       , "seize" , "Seize" , "SEIZE" ,"sixteen" , "Dieciséis" ,"Sechzehn" ,"sedici" ,"dezesseis" ,"zestien" ,"十六" ,"十六 "," ستة عشر "," on altı"/
+       ," sextonseksten ","kuusitoista" ,"seksten" ,"szesnaście" ,"tizenhat" ,"šestnáct" ,"열여섯" ,"mười sáu" , " Seiz  Seise" , " Sez" ,  "Seizee"/
+         ,  "Seizez" ,  "Seizz" , "Seizze" ,  "Saisze" ,  "Seyze" , "Sise"]
 
 dec_number_valid_chars = \
     bin_number_valid_chars \
