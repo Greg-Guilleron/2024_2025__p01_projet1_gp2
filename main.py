@@ -20,3 +20,5 @@ def do_the_job ():
                                     target_base)
 
 do_the_job ()
+
+print("hello")
