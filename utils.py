@@ -1,6 +1,4 @@
-ask_for_the_init_number_text = "Le nombre ? :"
-
-ask_again_for_the_init_number_text = "Le nombre put*** ! : "
+from data import *
 
 bin_number_valid_chars = ["0", "1"]
 
@@ -35,21 +33,21 @@ def is_a_valid_number (number):
     return is_a_valid_char
 
 def ask_for_the_init_number ():
-    init_number = input (ask_for_the_init_number_text)
+    init_number = input (ask_for_init_number_text)
     while not (is_a_valid_number (init_number)) == True:
         init_number = input (ask_again_for_the_init_number_text)
     return init_number
 
 def ask_for_the_init_base ():
-    init_number = input (ask_for_the_init_number_text)
+    init_number = input (ask_for_the_init_base_text)
     while not (is_a_valid_number (init_number)) == True:
-        init_number = input (ask_again_for_the_init_number_text)
+        init_number = input (ask_again_for_the_init_base_text)
     return init_number
 
 def ask_for_the_target_base ():
-    init_number = input (ask_for_the_init_number_text)
+    init_number = input (ask_again_for_the_target_base_text)
     while not (is_a_valid_number (init_number)) == True:
-        init_number = input (ask_again_for_the_init_number_text)
+        init_number = input (ask_again_for_the_target_base_text)
     return init_number
         
 ask_for_the_init_number ()
