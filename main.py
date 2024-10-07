@@ -2,40 +2,39 @@ from utils import *
 from data import *
 
 def bin_to_dec(init_number) :
-    
     target_number = 0
-    
-    if is_a_valid_number(init_number, bin_number_valid_chars) :
-        poids_binaire = len(init_number) - 1
-        for bit in init_number : 
-            target_number += int(bit) * 2**int(poids_binaire)
-            poids_binaire -= 1
-        return target_number
-    
-    else :
-        print("Le nombre de départ n'est valide en base binaire")
+    poids_binaire = len(init_number) - 1
+    for bit in init_number : 
+        target_number += int(bit) * 2**int(poids_binaire)
+        poids_binaire -= 1
+    return target_number
 
 def bin_to_hex(init_number) :
+    target_number = 0
     pass
     return target_number
 
 
 def dec_to_bin(init_number) :
+    target_number = 0
     pass
     return target_number
 
 
 def dec_to_hex(init_number) :
+    target_number = 0
     pass
     return target_number
 
 
 def hex_to_bin(init_number) :
+    target_number = 0
     pass
     return target_number
     
     
 def hex_to_dec(init_number) :
+    target_number = 0
     pass
     return target_number
     
@@ -43,42 +42,55 @@ def hex_to_dec(init_number) :
 
 def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
     
+    target_number = None
+
     if init_base == target_base :
         print("Error la base de départ et la base visée sont les mêmes")
         target_number = None
         return 
     
-    match init_base : 
+    while target_number == None :
         
-        case init_base if init_base in bin_base_valid_chars :    
+        match init_base : 
             
-            if target_base in dec_base_valid_chars : 
-                target_number = bin_to_dec(init_number)
-            else : 
-                target_number = bin_to_hex(init_number)
-        
+            case init_base if init_base in bin_base_valid_chars :    
                 
-        case init_base if init_base in dec_base_valid_chars :
-            
-            if target_base in bin_base_valid_chars :
-                target_number = dec_to_bin(init_number)
-            else :
-                target_number = dec_to_hex(init_number)
-       
-                
-        case init_base if init_base in hex_base_valid_chars :
-            
-            if target_base in bin_base_valid_chars :
-                target_number = hex_to_bin(init_number)
-            else :
-                target_number = hex_to_dec(init_number)
-                
-        
-        case _:
-            print("Base de départ non valide")
+                if is_a_valid_number(init_number, bin_number_valid_chars) :
+                    if target_base in dec_base_valid_chars : 
+                        target_number = bin_to_dec(init_number)
+                    else : 
+                        target_number = bin_to_hex(init_number)
+                else : 
+                    print("Le nombre de départ n'est valide en base binaire, veuillez changer de base de départ")
+                    init_base = ask_for_the_init_base(dec_base_valid_chars + hex_base_valid_chars)
 
-    
-    return target_number
+            case init_base if init_base in dec_base_valid_chars :
+                
+                if is_a_valid_number(init_number, dec_number_valid_chars) :
+                    if target_base in bin_base_valid_chars :
+                        target_number = dec_to_bin(init_number)
+                    else :
+                        target_number = dec_to_hex(init_number)
+                else : 
+                    print("Le nombre de départ n'est valide en base décimale, veuillez changer de base de départ")
+                    init_base = ask_for_the_init_base(bin_base_valid_chars + hex_base_valid_chars)
+
+            case init_base if init_base in hex_base_valid_chars :
+                
+                if is_a_valid_number(init_number, hex_number_valid_chars) :
+                    if target_base in bin_base_valid_chars :
+                        target_number = hex_to_bin(init_number)
+                    else :
+                        target_number = hex_to_dec(init_number)
+                else : 
+                    print("Le nombre de départ n'est valide en base hexadécimale, veuillez changer de base de départ")
+                    init_base = ask_for_the_init_base(dec_base_valid_chars + bin_base_valid_chars)
+
+            case _:
+                print("Base de départ non valide")
+
+        
+        return target_number
 
 
 
