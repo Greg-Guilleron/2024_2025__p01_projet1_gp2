@@ -1,5 +1,5 @@
-from utils import *
-from data import *
+from utils2 import *
+from data2 import *
 
 def bin_to_dec(init_number) :
     target_number = 0
@@ -53,14 +53,13 @@ def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
     
     target_number = None
 
-    if init_base == target_base :
+
+    while init_base == target_base :
         print("Error la base de départ et la base visée sont les mêmes")
         target_number = None
         return 
     
-    while target_number == None :
-        
-        match init_base : 
+    match init_base : 
             
             case init_base if init_base in bin_base_valid_chars :    
                 
@@ -87,7 +86,7 @@ def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base):
                 print("Base de départ non valide")
 
         
-        return target_number
+    return target_number
 
 
 
@@ -112,12 +111,6 @@ def do_the_job ():
       
     
     return target_number
-
-
-
-
-
-print(f"le nombre est cherché est : {str(do_the_job())}")
 
 
 
