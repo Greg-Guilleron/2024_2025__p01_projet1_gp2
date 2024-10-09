@@ -1,5 +1,5 @@
-from utils2 import *
-from data2 import *
+from utils import *
+from data import *
 
 def bin_to_dec(init_number) :
     target_number = 0
