@@ -154,25 +154,35 @@ def bin_to_hex(init_number) :
     return target_number
 
 
-def dec_to_bin(init_number) :
-    target_number = 1
-    pass
+def dec_to_bin(init_number):
+    init_number = int(init_number)
+    
+    if init_number == 0:
+        return "0"
+    
+    numbers = []
+    while init_number != 0:
+        rest_of_init_number_divided_by_2 = init_number % 2
+        numbers.insert(0, str(rest_of_init_number_divided_by_2)) 
+        init_number = init_number // 2
+        target_number = "".join(numbers)
+        
     return target_number
 
 
 def dec_to_hex(init_number) :
-    target_number = 2
+    target_number = 0
     pass
     return target_number
 
 
 def hex_to_bin(init_number) :
-    target_number = 3
+    target_number = 0
     pass
     return target_number
     
     
 def hex_to_dec(init_number) :
-    target_number = 4
+    target_number = 0
     pass
     return target_number
