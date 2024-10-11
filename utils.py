@@ -12,7 +12,7 @@ hex_number_valid_chars = \
   + ["a", "b", "c", "d", "e", "f"]
   
   
-bin_base_valid_chars = [
+bin_base_valid_chars = [ 
     "2",         # Numérique standard
     "binaire",   # En français
     "binary",    # En anglais
@@ -166,7 +166,7 @@ def dec_to_bin(init_number):
         rest_of_init_number_divided_by_2 = init_number % 2
         numbers.insert(0, str(rest_of_init_number_divided_by_2)) 
         init_number = init_number // 2
-        target_number = "".join(numbers)
+    target_number = "".join(numbers)
         
     return target_number
 
@@ -187,7 +187,7 @@ def dec_to_hex(init_number) :
         else : 
             numbers.insert(0, str(letters_for_hex_chars[rest_of_init_number_divided_by_2]))
         init_number = init_number // 16
-        target_number = "".join(numbers)
+    target_number = "".join(numbers)
         
     return target_number
     
