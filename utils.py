@@ -148,9 +148,10 @@ def bin_to_dec(init_number) :
         poids_binaire -= 1
     return target_number
 
+
 def bin_to_hex(init_number) :
-    target_number = 0
-    pass
+    transform_init_number = bin_to_dec(init_number)
+    target_number = dec_to_hex(transform_init_number)
     return target_number
 
 
@@ -171,18 +172,47 @@ def dec_to_bin(init_number):
 
 
 def dec_to_hex(init_number) :
-    target_number = 0
-    pass
+    init_number = int(init_number)
+    
+    letters_for_hex_chars = {10 : "A", 11 : "B", 12 : "C", 13 : "D", 14 : "E", 15 : "F"}
+    
+    if init_number == 0:
+        return "0"
+    
+    numbers = []
+    while init_number != 0:
+        rest_of_init_number_divided_by_2 = init_number % 16
+        if rest_of_init_number_divided_by_2 < 10 :
+            numbers.insert(0, str(rest_of_init_number_divided_by_2)) 
+        else : 
+            numbers.insert(0, str(letters_for_hex_chars[rest_of_init_number_divided_by_2]))
+        init_number = init_number // 16
+        target_number = "".join(numbers)
+        
     return target_number
-
-
+    
+    
 def hex_to_bin(init_number) :
-    target_number = 0
-    pass
+    transform_init_number = hex_to_dec(init_number)
+    target_number = dec_to_bin(transform_init_number)
     return target_number
     
     
 def hex_to_dec(init_number) :
+    letters_for_hex_chars = {"A" : 10, "B" : 11, "C" : 12, "D" : 13, "E" : 14, "F" : 15,
+                             "a" : 10, "b" : 11, "c" : 12, "d" : 13, "e" : 14, "f" : 15}
+    
+    numbers_to_add = []
+    index_power = len(str(init_number)) - 1
+    for n in init_number : 
+        if n in dec_number_valid_chars :
+            numbers_to_add.append(int(n) * 16**int(index_power))
+        else :
+            numbers_to_add.append(int(letters_for_hex_chars[n]) * 16**int(index_power))
+        index_power -= 1
+    
     target_number = 0
-    pass
+    for i in numbers_to_add :
+        target_number += i        
+    
     return target_number
