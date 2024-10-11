@@ -4,6 +4,11 @@ from data import *
 
 def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base) :
     
+    # vérification que les bases de départ et visée sont différentes (si les caracteres valides des 2 bases sont les memes alors init_number == target_number)
+    if sort_the_numbers_valid_chars_for_a_base(init_base) == sort_the_numbers_valid_chars_for_a_base(target_base) :
+        target_number = init_number
+        return target_number
+    
     match init_base : 
             
             case init_base if init_base in bin_base_valid_chars :    
@@ -35,8 +40,6 @@ def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base) :
 
 
 
-# assert bin_dec_hex__to__bin_dec_hex ("101", 2, 10) == "5"
-
 def do_the_job ():
 
     init_number = ask_for_the_init_number (hex_number_valid_chars, ask_for_init_number_text)
@@ -50,12 +53,8 @@ def do_the_job ():
         else :
             init_base = ask_for_the_init_base(base_valid_chars, f"Le nombre de départ n'est valide en base {init_base}, veuillez changer de base de départ : ")
     
-    # vérification que les bases de départ et visée sont différentes (si les caracteres valides des 2 bases sont les memes alors init_number == target_number)
-    if init_base_valid_number_chars == sort_the_numbers_valid_chars_for_a_base(target_base) :
-        target_number = init_number
-    
     # transformation du nombre choisi
-    else : target_number = bin_dec_hex__to__bin_dec_hex (init_number, \
+    target_number = bin_dec_hex__to__bin_dec_hex (init_number, \
                                     init_base, \
                                     target_base)
       
