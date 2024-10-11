@@ -50,19 +50,17 @@ def do_the_job ():
         else :
             init_base = ask_for_the_init_base(base_valid_chars, f"Le nombre de départ n'est valide en base {init_base}, veuillez changer de base de départ : ")
     
-    # vérification que les bases de départ et visée sont différentes (si les caracteres valides des 2 bases sont les memes alors init_base == target_base)
-    while init_base_valid_number_chars == sort_the_numbers_valid_chars_for_a_base(target_base) :
-        target_base = ask_for_the_target_base(base_valid_chars, "Error la base de départ et la base visée sont les mêmes, veuillez choisir une autre base visée : ")
+    # vérification que les bases de départ et visée sont différentes (si les caracteres valides des 2 bases sont les memes alors init_number == target_number)
+    if init_base_valid_number_chars == sort_the_numbers_valid_chars_for_a_base(target_base) :
+        target_number = init_number
     
     # transformation du nombre choisi
-    target_number = bin_dec_hex__to__bin_dec_hex (init_number, \
+    else : target_number = bin_dec_hex__to__bin_dec_hex (init_number, \
                                     init_base, \
                                     target_base)
       
     
     return target_number
-
-
 
 
 
