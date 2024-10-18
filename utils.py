@@ -47,13 +47,62 @@ def choose_yes_or_no(question) :
 
     choice = None 
 
-    while choice != "oui" and choice != "non" :
+    while choice not in valid_response and choice not in unvalid_response :
         choice = input(question + " oui - non : ")
 
-    if choice == "oui" :
+    if choice in valid_response :
         return True
     else :
         return False
+    
+
+valid_response = [
+    "oui",      # Français
+    "yes",      # Anglais
+    "sí",       # Espagnol
+    "Ja",       # Allemand
+    "Sì",       # Italien
+    "はい" ,       # Japonais
+    "네" ,         # Coréen
+    "Да" ,        # Russe
+    "sim",      # Portugais
+    "да" ,         # Bulgare
+    "taip",     # Malais
+    "evet",     # Turc
+    "شاهد" ,  # Arabe
+    "už" ,         # Lituanien
+    "ya",       # Indonésien
+    "tак" ,       # Ukrainien
+    "aye",      # Écossais
+    "o",        # Grec
+    "haan",     # Hindi
+    "si",       # Filipino
+    "ja",       # Néerlandais 
+    ]
+    
+unvalid_response = [
+    "non",      # Français
+    "no",       # Anglais
+    "No",       # Espagnol
+    "nein",     # Allemand
+    "Noo",       # Italien
+    "いいえ" ,    # Japonais
+    "아니요" ,  # Coréen
+    "hет" ,       # Russe
+    "não",      # Portugais
+    "не" ,          # Bulgare
+    "tidak",    # Malais
+    "hayır",     # Turc
+    "لا" ,         # Arabe
+    "ne" ,         # Lituanien
+    "tidak",    # Indonésien
+    "hі" ,        # Ukrainien
+    "na",       # Écossais
+    "Όχι" ,      # Grec
+    "नहीं" ,     # Hindi
+    "hindi",    # Filipino
+    "nee",      # Néerlandais
+    ]
     
         
 
