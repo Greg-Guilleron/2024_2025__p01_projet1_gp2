@@ -22,6 +22,55 @@ hex_number_valid_chars = \
   + ["A", "B", "C", "D", "E", "F"] \
   + ["a", "b", "c", "d", "e", "f"]
   
+
+valid_response = [
+    "oui",      # Français
+    "yes",      # Anglais
+    "sí",       # Espagnol
+    "Ja",       # Allemand
+    "Sì",       # Italien
+    "はい" ,       # Japonais
+    "네" ,         # Coréen
+    "Да" ,        # Russe
+    "sim",      # Portugais
+    "да" ,         # Bulgare
+    "taip",     # Malais
+    "evet",     # Turc
+    "شاهد" ,  # Arabe
+    "už" ,         # Lituanien
+    "ya",       # Indonésien
+    "tак" ,       # Ukrainien
+    "aye",      # Écossais
+    "o",        # Grec
+    "haan",     # Hindi
+    "si",       # Filipino
+    "ja",       # Néerlandais 
+    ]
+    
+unvalid_response = [
+    "non",      # Français
+    "no",       # Anglais
+    "No",       # Espagnol
+    "nein",     # Allemand
+    "Noo",       # Italien
+    "いいえ" ,    # Japonais
+    "아니요" ,  # Coréen
+    "hет" ,       # Russe
+    "não",      # Portugais
+    "не" ,          # Bulgare
+    "tidak",    # Malais
+    "hayır",     # Turc
+    "لا" ,         # Arabe
+    "ne" ,         # Lituanien
+    "tidak",    # Indonésien
+    "hі" ,        # Ukrainien
+    "na",       # Écossais
+    "Όχι" ,      # Grec
+    "नहीं" ,     # Hindi
+    "hindi",    # Filipino
+    "nee",      # Néerlandais
+    ]
+
   
 bin_base_valid_chars = [
     "2", "binaire", "binary", "base2", "base-2", "bin", "b2", "02", "binario", "binaryy",
