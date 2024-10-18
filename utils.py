@@ -33,6 +33,28 @@ bin_base_valid_chars = [
     "deuce",     # Variante anglaise informelle
     "bit",       # Terme lié à l'informatique
     "binary2",   # Combinaison explicite  
+    "deuxx",
+    "deaux",
+    "d'eux",
+    "d'euxs",
+    "d'euxx",
+    "deu",
+    "deuxe",
+    "dos",
+    "zwei",
+    "due",
+    "twee",
+    "два",
+    "iki",
+    "dwa",
+    "dva",
+    "hai",
+    "binairee",
+    "binnair",
+    "binere",
+    "binarre",
+    "binairey",
+    "dEUX",
 ]
 
 dec_base_valid_chars = [
