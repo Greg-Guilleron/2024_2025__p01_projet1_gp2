@@ -1,16 +1,5 @@
 from data import *
 
-
-# base_valid_chars = \
-#         [ "2" , "deuxx" , "deaux" , "d'eux" , "d'euxs" , "d'euxx" , "deu" , "deu" , "deuxs" , "d'euxse" , "deuxe" ,   "⠙⠑⠥⠭" ,  "two" , "dos" , "zwei", \
-#         "due" , "dois" , "twee" , "два"  , "二" ,"二" , "عشرة", "iki" , "två" , "to" , "kaksi" , "to" , "dwa", "kettő" , "dva" ,"이" , "hai" , "binaire",\
-#         "binairee" , "binnair" , "binere" , "binarre" , "binare" , "binnaire" , "binairey" , "bynaire" , "binairé" , "deux" ,"deux" , "dEUX" , "10",  \
-#         "ten","diez" ,"zehn" ,"dieci" ,"dez" ,"tien" , "десять" ,"十" ,"十" ,"on" ,"tio" ,"ti" ,"kymmenen" ,"ti" ,"dziesięć" ,"tíz" ,"deset" ,"십",  \
-#         "mười" , "dixx", "d'ix" , "dixxe" ,"diks" ,"dics" ,"diix" ,"d'i" ,"d'ixs" ,"d'x" , "dixz" , "⠙⠊⠭" ,"dix" ,"dix" ,"dIX" ,"16" , "⠎⠑⠊⠵⠑",  \
-#         "seize" , "seize" , "sEIZE" ,"sixteen" , "dieciséis" ,"sechzehn" ,"sedici" ,"dezesseis" ,"zestien" ,"十六" ,"十六","ستة عشر","on altı", \
-#         "sextonseksten","kuusitoista" ,"seksten" ,"szesnaście" ,"tizenhat" ,"šestnáct" ,"열여섯" ,"mười sáu" , " seiz",  "seise" , "sez" ,  "seizee", \
-#         "seizez" ,  "seizz" , "seizze" ,  "saisze" ,  "seyze" , "sise"]
-
 def check_char_number_validity (char, valid_char):
     return char in valid_char
 
