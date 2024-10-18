@@ -62,5 +62,13 @@ def do_the_job ():
     return target_number
 
 
+choice_to_close = choose_yes_or_no("Voulez vous convertir un nombre ?")
 
-print(f"le nombre est cherché est : {str(do_the_job())}")
+while choice_to_close == True :
+    print(f"le nombre est cherché est : {str(do_the_job())}")
+    choice_to_close = choose_yes_or_no("Voulez vous convertir un autre nombre ?")
+
+print("A bientôt !!")
+
+
+

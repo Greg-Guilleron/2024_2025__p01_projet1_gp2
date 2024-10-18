@@ -140,6 +140,20 @@ def sort_the_numbers_valid_chars_for_a_base(base) :
             return hex_number_valid_chars
         
 
+def choose_yes_or_no(question) :
+
+    choice = None 
+
+    while choice != "oui" and choice != "non" :
+        choice = input(question + " oui - non : ")
+
+    if choice == "oui" :
+        return True
+    else :
+        return False
+    
+        
+
 def bin_to_dec(init_number) :
     target_number = 0
     poids_binaire = len(init_number) - 1
