@@ -101,6 +101,57 @@ hex_base_valid_chars = [
     "0x",          # Préfixe hexadécimal
     "hex16",       # Combinaison explicite
     "16base",      # Variante numérique explicite
+    "hexa",
+    "h",
+    "he",
+    "0x1A",
+    "hexadezimal",  # Allemand
+    "esadecimale",  # Italien
+    "hexadecimal",  # Portugais
+    "hexadecimaal",  # Néerlandais
+    "шестнадцатеричный (shestnadtsatyerichny)",  # Russe
+    "十六进制 (shíliù jìnzhì)",  # Chinois (simplifié)
+    "16進数 (じゅうろくしんすう, jūroku shinsū)",  # Japonais
+    "16진수 (십육진수, sip-yuk jinsu)",  # Coréen
+    "ستة عشر (sittat ʿashar)",  # Arabe
+    "onaltılık",  # Turc
+    "hexadecimalt",  # Suédois
+    "hexadecimalt",  # Danois
+    "heksadesimal",  # Norvégien
+    "heksadesimaali",  # Finnois
+    "hexadecimális",  # Hongrois
+    "szesnastkowy",  # Polonais
+    "hexadecimální",  # Tchèque
+    "šesnajsti",  # Slovène
+    "hexadecimálny",  # Slovaque
+    "heksadecimalni",  # Croate
+    "хексадецимални (heksadecimalni)",  # Serbe
+    "хексадесетичен (heksadesetichen)",  # Bulgare
+    "hexazecimal",  # Roumain
+    "šešioliktainis",  # Lituanien
+    "sešpadsmitais",  # Letton
+    "kuusteistkümnes",  # Estonien
+    "sextán",  # Islandais
+    "esadeċimali",  # Maltais
+    "hexadezimala",  # Basque
+    "hexadecimal",  # Catalan
+    "hexadecimal",  # Galicien
+    "hexadécimale",  # Walon
+    "hexadesimal",  # Luxembourgeois
+    "хексадецимален (heksadecimalen)",  # Macédonien
+    "heksadecimal",  # Albanais
+    "hệ mười sáu",  # Vietnamien
+    "ฐานสิบหก (thān sìp hòk)",  # Thaï
+    "ষোলবেস (shôlobes)",  # Bengali
+    "பதினாறு அடிப்படை (patiṉāṟu aṭippaṭai)",  # Tamoul
+    "سولہ گن (solah gan)",  # Ourdou
+    "شانزده (shānzdah)",  # Persan
+    "שש עשרה (shesh esreh)",  # Hébreu
+    "षोडश (ṣoḍaśa)",  # Sanskrit
+    "شانزده (shānzdah)",  # Farsi
+    "ܫܬܐ ܥܣܪܐ (shṭā ʿasrā)",  # Syriaque
+    "მეათექვსმეტიანა (meat’ek’vsmet’iana)",  # Géorgien
+    "hexadesimali"  # Swahili
 ]
   
   
