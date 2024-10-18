@@ -49,7 +49,7 @@ def choose_yes_or_no(question) :
     choice = None 
 
     while choice not in valid_response and choice not in unvalid_response :
-        choice = input(question + " oui - non : ")
+        choice = input(question)
 
     if choice in valid_response :
         return True

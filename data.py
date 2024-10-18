@@ -28,13 +28,13 @@ hex_number_valid_chars = \
 valid_response = [
     "oui", "yes", "sí", "Ja", "Sì", "はい", "네", "Да", "sim", "да",
     "taip", "evet", "شاهد", "už", "ya", "tак", "aye", "o", "haan", "si",
-    "ja"
+    "ja", "o", "O"
 ]
 
 unvalid_response = [
     "non", "no", "No", "nein", "Noo", "いいえ", "아니요", "hет", "não", "не",
     "tidak", "hayır", "لا", "ne", "tidak", "hі", "na", "Όχι", "नहीं", "hindi",
-    "nee"
+    "nee", "n", "N"
 ]
 
   
