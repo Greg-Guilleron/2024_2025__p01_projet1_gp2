@@ -11,6 +11,7 @@ ask_for_the_target_base_text = "Quelle est la base ciblée du nombre ? : "
 ask_again_for_the_target_base_text = "Quelle est la base ciblée stpp ?? : "
 
 
+# chiffres pour les bases
 bin_number_valid_chars = ["0", "1"]
 
 dec_number_valid_chars = \
@@ -23,55 +24,21 @@ hex_number_valid_chars = \
   + ["a", "b", "c", "d", "e", "f"]
   
 
+# caractere pour oui ou non
 valid_response = [
-    "oui",      # Français
-    "yes",      # Anglais
-    "sí",       # Espagnol
-    "Ja",       # Allemand
-    "Sì",       # Italien
-    "はい" ,       # Japonais
-    "네" ,         # Coréen
-    "Да" ,        # Russe
-    "sim",      # Portugais
-    "да" ,         # Bulgare
-    "taip",     # Malais
-    "evet",     # Turc
-    "شاهد" ,  # Arabe
-    "už" ,         # Lituanien
-    "ya",       # Indonésien
-    "tак" ,       # Ukrainien
-    "aye",      # Écossais
-    "o",        # Grec
-    "haan",     # Hindi
-    "si",       # Filipino
-    "ja",       # Néerlandais 
-    ]
-    
+    "oui", "yes", "sí", "Ja", "Sì", "はい", "네", "Да", "sim", "да",
+    "taip", "evet", "شاهد", "už", "ya", "tак", "aye", "o", "haan", "si",
+    "ja"
+]
+
 unvalid_response = [
-    "non",      # Français
-    "no",       # Anglais
-    "No",       # Espagnol
-    "nein",     # Allemand
-    "Noo",       # Italien
-    "いいえ" ,    # Japonais
-    "아니요" ,  # Coréen
-    "hет" ,       # Russe
-    "não",      # Portugais
-    "не" ,          # Bulgare
-    "tidak",    # Malais
-    "hayır",     # Turc
-    "لا" ,         # Arabe
-    "ne" ,         # Lituanien
-    "tidak",    # Indonésien
-    "hі" ,        # Ukrainien
-    "na",       # Écossais
-    "Όχι" ,      # Grec
-    "नहीं" ,     # Hindi
-    "hindi",    # Filipino
-    "nee",      # Néerlandais
-    ]
+    "non", "no", "No", "nein", "Noo", "いいえ", "아니요", "hет", "não", "не",
+    "tidak", "hayır", "لا", "ne", "tidak", "hі", "na", "Όχι", "नहीं", "hindi",
+    "nee"
+]
 
   
+# caractere pour les bases
 bin_base_valid_chars = [
     "2", "binaire", "binary", "base2", "base-2", "bin", "b2", "02", "binario", "binaryy",
     "binn", "01", "two", "deux", "1-0", "bi2", "second", "deuce", "bit", "binary2",
