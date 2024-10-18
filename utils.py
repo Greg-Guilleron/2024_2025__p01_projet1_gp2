@@ -1,5 +1,6 @@
 from data import *
 
+
 def check_char_number_validity (char, valid_char):
     return char in valid_char
 
