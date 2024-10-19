@@ -66,7 +66,7 @@ choice_to_close = choose_yes_or_no("Bonjour Jim Pioche, voulez vous convertir un
 
 while choice_to_close == True :
     print(f"le nombre est cherché est : {str(do_the_job())}")
-    choice_to_close = choose_yes_or_no("Voulez vous convertir un autre nombre ?")
+    choice_to_close = choose_yes_or_no("Voulez vous convertir un autre nombre ? : ")
 
 print("A bientôt !!")
 
