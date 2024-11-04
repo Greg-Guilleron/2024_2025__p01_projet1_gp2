@@ -62,7 +62,7 @@ def do_the_job ():
     return target_number
 
 
-choice_to_close = choose_yes_or_no("Bonjour Jim Pioche, voulez vous convertir un nombre ? : ")
+choice_to_close = choose_yes_or_no("Voulez vous convertir un nombre ?: ")
 
 while choice_to_close == True :
     print(f"le nombre est cherché est : {str(do_the_job())}")
