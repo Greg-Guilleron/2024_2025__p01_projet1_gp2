@@ -61,7 +61,7 @@ def do_the_job ():
     
     return target_number
 
-print("Bonjour Jim Pioche, je m'appelle Kirby 54 je suis pret a vous assister aujourd'hui")
+print("Bonjour Jim Pioche, je m'appelle Asterion je suis pret a vous assister aujourd'hui")
 choice_to_close = choose_yes_or_no("Voulez vous convertir un nombre ?: ")
 
 while choice_to_close == True :
