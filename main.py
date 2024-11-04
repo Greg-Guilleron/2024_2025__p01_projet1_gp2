@@ -1,6 +1,6 @@
 from utils import *
 from data import *
-        
+
 
 def bin_dec_hex__to__bin_dec_hex (init_number, init_base, target_base) :
     
@@ -61,7 +61,7 @@ def do_the_job ():
     
     return target_number
 
-
+print("Bonjour Jim Pioche, je m'appelle el primo je suis pret a vous assister aujourd'hui")
 choice_to_close = choose_yes_or_no("Voulez vous convertir un nombre ?: ")
 
 while choice_to_close == True :
