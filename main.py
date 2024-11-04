@@ -69,7 +69,7 @@ while choice_to_close == True :
     choice_to_close = choose_yes_or_no("Voulez vous convertir un autre nombre ? : ")
 
 print("A bientôt !!")
-print("merci de votre utilisation , N'hesiter pas à remercier Noah ,Gregoire ,Gaspard")
+print("merci de votre utilisation !!!!!, N'hesiter pas à remercier Noah ,Gregoire ,Gaspard !!!!!")
 
 
 
